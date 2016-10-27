@@ -1,0 +1,21 @@
+body {
+	background-color: white;
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30px;
+	padding-left: 20px;
+}
+
+.quiz-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Bungee', cursive;
+	padding: 100px 100px;
+
+
+}

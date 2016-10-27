@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>NHL Quiz</title>
+	<link rel="stylesheet" type="text/css" href="nhl.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 </head>
-<body>
 
-	<div class="question-count">
-		3 Qustion
+
+<body>
+	
+	<div class="logo" a href="nhl.com" img src="nhllogo.png">
 	</div>
 	
-
 	<div class="quiz-title">
-		A Super Great Quiz
+		NHL Quiz
 	</div>
 
 	<div class="quiz-subtitle">
-		It's honestly really great.
+		Test your hockey knowledge.
 	</div>
 
 
 	<div class="start-button">
-		<a href="questionone.php">START</a>
+		<a href="question1.php">START</a>
 	</div>
-
 
 </body>
 </html>
