@@ -3,26 +3,25 @@
 <head>
 	<title>NHL Quiz</title>
 	<link rel="stylesheet" type="text/css" href="nhl.css">
-	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Mitr" rel="stylesheet">
 </head>
 
 
 <body>
-	
-	<div class="logo" a href="nhl.com" img src="nhllogo.png">
-	</div>
+	<a href ="http://nhl.com" class="header">
+		<img class="logo" src="nhlimage.png">
+	</a>
 	
 	<div class="quiz-title">
-		NHL Quiz
+		NHL QUIZ
 	</div>
 
 	<div class="quiz-subtitle">
 		Test your hockey knowledge.
 	</div>
 
-
 	<div class="start-button">
-		<a href="question1.php">START</a>
+		<a href="question1.php">Start the Quiz</a>
 	</div>
 
 </body>

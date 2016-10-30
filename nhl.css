@@ -1,21 +1,35 @@
-body {
-	background-color: white;
-}
-
 .logo {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	width: 30px;
+	align-items: flex-start;
 	padding-left: 20px;
+	width: 70px;
 }
 
 .quiz-title {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	font-family: 'Bungee', cursive;
-	padding: 100px 100px;
+	font-family: 'Mitr', sans-serif;
+	padding: 60px 60px;
+	font-size: 100px;
+	font-weight: bold;
+}
 
+.quiz-subtitle {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+.start-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 
 }
+

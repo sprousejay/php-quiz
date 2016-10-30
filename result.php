@@ -1,25 +1,37 @@
 <?php
 	
-	include 'mostwins.php';
-	$current_question = 0;
-	$current_score = 0;
-?>
-
-	$current_score = $GET["current_score"];
-
+	include 'answer.php';
 	
-	if ($answers[$_GET["current_question"]]) {
+	$current_score = $_GET["current_score"];
+
+
+	if ($answer[$_GET["current_question"]] == $_GET["answer"]) {
 		$current_score += 1;
-	} 
+	}
+	// else {
+	// 	$current_score = 0;
+	// }
+ 
+?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>NHL Quiz</title>
+	<link rel="stylesheet" type="text/css" href="nhl.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Mitr" rel="stylesheet">
 </head>
 <body>
-	<div>Wow great job! You know your hockey! <?php echo $current_score ; ?> out of 1.</div>
+	<a href ="http://nhl.com" class="header">
+		<img class="logo" src="nhlimage.png">
+	</a>
+	
+	<div class="quiz-title">
+		NHL QUIZ
+	</div>
+
+	<div>You scored <?php echo $current_score;?> out of 3.</div>
 
 </body>
 </html>

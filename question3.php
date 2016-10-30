@@ -1,8 +1,12 @@
 <?php
 	
 	include 'answer.php';
-	$current_score = 0;
-	$current_question = 0;
+	$current_question = $_GET["current_question"];
+	$current_score = $_GET["current_score"];
+	if ($_GET["answer"] == $answer[$current_question]) {
+		$current_score += 1;
+	}
+	$current_question += 1;
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +28,11 @@
 
 	<div class="question-prompt">
 		<?php 
-			echo $quiz [$current_question];
+			echo $quiz [$current_question]; 
 		?>
 	</div>
 
-	<form action="question2.php">
+	<form action="result.php">
 		<input type="radio" name="answer" value="A" checked> A <br>
 		<input type="radio" name="answer" value="B" checked> B <br>
 		<input type="radio" name="answer" value="C" checked> C <br>
