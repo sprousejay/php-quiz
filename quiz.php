@@ -1,4 +1,17 @@
 <?php
+
+	$quiz = array (
+		0 => "Which team has the most Stanley Cup wins? A. Montreal Canadiens B. Toronto Maple Leafs C. Detroit Red Wings D. Boston Bruins",
+		1 => "How many NHL teams have never won the Stanley Cup Final? A. 10  B. 11 C. 12 D. 0",
+		2 => "Who has scored the most goals in the NHL? A. Wayne Gretzky  B. Gordie Howe C. Jaromir Jagr D. Brett Hull",
+		);
+	
+	$answer = array (
+		0 => "A",
+		1 => "C",
+		2 => "A",
+		);
+
 	include 'question.php';
 	if (count($_GET) == 0) {
 		$current_score = 0;
@@ -34,22 +47,22 @@
 		NHL QUIZ
 	</div>
 
-	<?php if ($last_question) { ?>
+<?php
+ 	if ($last_question) { ?>
 		<div class="final-result">
-			You've finished the quiz! Your final score is <?php echo $current_score; ?> out of 3.
+			You've finished the quiz! Your final score is <?php echo $current_score; ?> out of 5.
 		</div>
-	<?php } else { ?>
-
 
 	<div class="question-prompt">
 		<?php 
 			echo $quiz [$current_question];
 		?>
 	</div>
+?>
 
 
 
-	<form action="question2.php">
+	<form>
 		<input type="radio" name="answer" value="A" checked> A <br>
 		<input type="radio" name="answer" value="B" checked> B <br>
 		<input type="radio" name="answer" value="C" checked> C <br>

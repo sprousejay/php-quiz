@@ -17,11 +17,11 @@
 	</div>
 
 	<div class="quiz-subtitle">
-		Test your hockey knowledge.
+		Test Your Hockey Knowledge.
 	</div>
 
 	<div class="start-button">
-		<a href="question1.php">Start the Quiz</a>
+		<a href="quiz.php">Start</a>
 	</div>
 
 </body>
